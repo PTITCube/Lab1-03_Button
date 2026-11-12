@@ -1,5 +1,5 @@
 /**
- * VÍ DỤ 1-03: ĐỌC TÍN HIỆU TỪ NÚT NHẤN (BUTTON INPUT)
+ * VÍ DỤ 1-04: ĐỌC TÍN HIỆU TỪ NÚT NHẤN (BUTTON INPUT)
  * 
  * Mô tả:
  * - Sử dụng chế độ INPUT_PULLUP (điện trở kéo lên nội bộ của ESP32).
@@ -18,8 +18,7 @@ void setup() {
 
     Serial.println("\n[EXAMPLE] Bắt đầu bài test Nút nhấn (Button)...");
     pinMode(BUTTON_PIN, INPUT_PULLUP);
-    Serial.println("Hãy nhấn nút nối chân GPIO 4 với GND để kiểm tra.");
-}
+    }
 
 void loop() {
     int currentState = digitalRead(BUTTON_PIN);
